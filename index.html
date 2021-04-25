@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layer"></div>
+    <div class="grid-container">
+        <div class="box1">
+            <ul id="desktop-navbar" class="navbar">
+                <li class="nav-links" id="logo"><img src="images/logo.svg" alt="logo"></li>
+                <li class="nav-links"><a style="text-decoration: none;color:white;" href="#">home</a></li>
+                <li class="nav-links"><a style="text-decoration: none;color:white;" href="https://github.com/codeswithroh">shop</a></li>
+                <li class="nav-links"><a style="text-decoration: none;color:white;" href="https://github.com/codeswithroh">about</a></li>
+                <li class="nav-links"><a style="text-decoration: none;color:white;" href="https://github.com/codeswithroh">contact</a></li>
+            </ul>
+
+            <ul class="mobile-navbar">
+                <li><a class="open" href="#"><img src="images/icon-hamburger.svg" alt="hamburger menu"></a>
+                    <ul class="mobile-nav">
+                        <li class="mobile-links"><a class="close" href="#"><img src="images/icon-close.svg" alt="close"></a></li>
+                        <li class="mobile-links"><a href="#">home</a></li>
+                        <li class="mobile-links"><a href="https://github.com/codeswithroh">shop</a></li>
+                        <li class="mobile-links"><a href="https://github.com/codeswithroh">about</a></li>
+                        <li class="mobile-links"><a href="https://github.com/codeswithroh">contact</a></li>
+                    </ul>
+                </li>
+                <li><img src="images/logo.svg" alt="logo"></li>
+            </ul>
+            <div id="img-container" class="slide-container">
+                <div id="desktop-img" class="img-slides imgfade"><img src="images/desktop-image-hero-1.jpg" alt="furniture 1"></div>
+                <div id="desktop-img" class="img-slides imgfade"><img src="images/desktop-image-hero-2.jpg" alt="furniture 2"></div>
+                <div id="desktop-img" class="img-slides imgfade"><img src="images/desktop-image-hero-3.jpg" alt="furniture 3"></div>
+                <div id="mobile-img" class="img-slides imgfade"><img src="images/mobile-image-hero-1.jpg" alt="furniture 1"></div>
+                <div id="mobile-img" class="img-slides imgfade"><img src="images/mobile-image-hero-2.jpg" alt="furniture 2"></div>
+                <div id="mobile-img" class="img-slides imgfade"><img src="images/mobile-image-hero-3.jpg" alt="furniture 3"></div>
+            </div>
+            <div id="mobile-controller" class="controller">
+                <a onclick="moveslide(-1)"><img src="images/icon-angle-left.svg" alt="left controller"></a>
+                <a onclick="moveslide(1)"><img src="images/icon-angle-right.svg" alt="right controller"></a>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="slide-container">
+                <div class="slides imgfade">
+                    <h1>Discover innovative ways to decorate</h1>
+                    <p>We provide unmatched quality, comfort, and style for property owners across the country.
+                        Our experts combine form and function in bringing your vision to life. Create a room in your
+                        own style with our collection and make your property a reflection of you and what you love.
+                    </p>
+                    <a class="shop" href="https://github.com/codeswithroh"><span id="shop">S H O P</span> <span id="now">N O W</span> <img id="arrow" src="images/icon-arrow.svg" alt="arrow"></a>
+                </div>
+                <div class="slides imgfade">
+                    <h1>We are available all across the globe</h1>
+                    <p>With stores all over the world, it's easy for you to find furniture for your home or place of
+                        business.
+                        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+                        store locator. Any questions? Don't hesitate to contact us today.
+                    </p>
+                    <a class="shop" href="https://github.com/codeswithroh"><span id="shop">S H O P</span> <span id="now">N O W</span> <img id="arrow" src="images/icon-arrow.svg" alt="arrow"></a>
+                </div>
+                <div class="slides imgfade">
+                    <h1>Manufactured with the best materials</h1>
+                    <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced
+                        technology
+                        to ensure that every product is made as perfect and as consistent as possible. With three decades of
+                        experience in this industry, we understand what customers want for their home and office.
+                    </p>
+                    <a class="shop" href="https://github.com/codeswithroh"><span id="shop">S H O P</span> <span id="now">N O W</span> <img id="arrow" src="images/icon-arrow.svg" alt="arrow"></a>
+                </div>
+            </div>
+            <div id="desktop-controller" class="controller">
+                <a onclick="moveslide(-1)"><img src="images/icon-angle-left.svg" alt="left controller"></a>
+                <a onclick="moveslide(1)"><img src="images/icon-angle-right.svg" alt="right controller"></a>
+            </div>
+        </div>
+        <div class="box3">
+            <img src="images/image-about-dark.jpg" alt="dark chairs">
+        </div>
+        <div class="box4">
+            <div class="about-furniture">
+                <h3>About our furniture</h3>
+                <p>Our multifunctional collection blends design and function to suit your individual taste.
+                    Make each room unique, or pick a cohesive theme that best express your interests and what
+                    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                    or anything in between. Product specialists are available to help you create your dream space.
+                </p>
+            </div>
+        </div>
+        <div class="box5">
+            <img src="images/image-about-light.jpg" alt="light chairs">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
